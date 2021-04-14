@@ -1,0 +1,50 @@
+.navbar,
+footer {
+  background: #2bbf0d !important;
+}
+
+.navbar a,
+.navbar ul,
+footer {
+  color: #ffffff !important;
+}
+
+.header {
+  position: relative;
+  color: #ffffff;
+  background: rgb(207, 251, 106);
+  background: linear-gradient(
+    315deg,
+    #cffb6a 3%,
+    #91fa26 15%,
+    #81ef12 55%,
+    #33df0f 95%
+  );
+  padding: 2rem 0 2rem 0;
+  margin-bottom: 3rem;
+}
+
+.companyLogo {
+  height: 6rem;
+}
+
+.companyName {
+  color: #ffff01;
+}
+
+.showcase {
+}
+
+body {
+  padding-top: 56px;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 2rem 0 1rem 0;
+}
+
+.credits a {
+  color: #ffffff;
+  font-weight: bold;
+}

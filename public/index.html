@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CoopeYuca</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./assets/img/favicon.ico"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/myStyle.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.4.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.4.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <!-- <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <img
+              class="companyLogo"
+              src="./assets/img/logo-nobackground.png"
+              alt="logo"
+            />
+          </div>
+
+          <div class="col-sm-10">
+            <h2>Bienvenidos a</h2>
+            <h1 class="companyName">COOPEYUCA</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Quiénes somos</h2>
+          <hr />
+          <p>
+            Somos una planta procesadora de yuca para pelado, troceado,
+            empacado, refrigerado, para mercado local e internacional.
+          </p>
+          <p>
+            Nuestro propósito es convertirnos en la primera procesadora en la
+            zona de La Vega que permita servir de vía para ofrecer los productos
+            locales en el extranjero.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <div
+            id="carousel"
+            class="carousel slide carousel-fade"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/gallery/istockphoto-1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/gallery/istockphoto-2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item active">
+                <img
+                  src="./assets/img/gallery/istockphoto-3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="address">
+          <p>
+            <strong>Dirección:</strong> Jumunucú, La Vega, R.D.<br />
+            <strong>Teléfono:</strong> (809) 242-6842<br />
+            <strong>Correo:</strong> coopeyuca@gmail.com<br />
+          </p>
+        </div>
+
+        <div class="credits">
+          <p>
+            Diseñado por
+            <a href="https://www.linkedin.com/in/laia-b-b1b4b479/"
+              >Laia Bordas</a
+            >
+          </p>
+          <p class="m-0 text-center">Copyright &copy; COOPEYUCA 2021</p>
+          <br />
+        </div>
+      </div>
+
+      <!-- /.container -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAYF4XM96ts6UZrufP7XA5ixpNzRSSMsso",
+        authDomain: "coopeyuca-83b4d.firebaseapp.com",
+        projectId: "coopeyuca-83b4d",
+        storageBucket: "coopeyuca-83b4d.appspot.com",
+        messagingSenderId: "979939786355",
+        appId: "1:979939786355:web:2ccf7da441431c72f3b406",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </body>
+</html>
