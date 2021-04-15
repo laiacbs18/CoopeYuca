@@ -9,6 +9,12 @@ footer {
   color: #ffffff !important;
 }
 
+.socialmediaIcons {
+  width: 25px;
+  height: 25px;
+  fill: #ffffff;
+}
+
 .header {
   position: relative;
   color: #ffffff;
